@@ -9,4 +9,4 @@ MQTT_PASS=$(jq -r '.mqtt_password' $CONFIG_PATH)
 
 cd /app/VevorWeatherbridge
 
-python3 weatherbridge.py --frequency $FREQ
+exec python3 weatherbridge.py --frequency $FREQ
