@@ -1,0 +1,23 @@
+{
+  "name": "Vevor Weather Bridge",
+  "version": "1.0",
+  "slug": "vevor_bridge",
+  "description": "Bridge Vevor via RTL-SDR",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "devices": ["/dev/bus/usb"],
+  "arch": ["amd64", "aarch64"],
+  "options": {
+    "frequency": 433920000,
+    "mqtt_host": "core-mosquitto",
+    "mqtt_user": "mqtt_user",
+    "mqtt_password": "xxxx"
+  },
+  "schema": {
+    "frequency": "int",
+    "mqtt_host": "str",
+    "mqtt_user": "str",
+    "mqtt_password": "str"
+  }
+}
