@@ -10,6 +10,8 @@ WORKDIR /app
 
 RUN git clone https://github.com/C9H13NO3-dev/VevorWeatherbridge .
 
+WORKDIR /app/VevorWeatherbridge
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY run.sh /run.sh
